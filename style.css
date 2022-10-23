@@ -1,3 +1,5 @@
+
+
 .panel {
     height: 100vh;
 }
@@ -24,6 +26,19 @@
 
 .right {
     width: 70vw; 
+}
+
+@media only screen and (max-width: 1000px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .panel{
+        width: 100vw;
+    }
+    .left{
+        height: 10em;
+    }
 }
 
 /*CSS Reset File*/
