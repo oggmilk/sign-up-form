@@ -44,8 +44,23 @@
     width: 70vw; 
     background-color: var(--background);
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#upper-text {
+    font-size: 1.5em;
+    font-family:'Times New Roman', Times, serif;
+    color: aliceblue;
+    flex: 1;
+    display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2em;
+}
+
+form {
+    flex: 2;
 }
 
 @font-face {
