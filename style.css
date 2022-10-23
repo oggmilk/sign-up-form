@@ -21,11 +21,10 @@
 }
 
 .logo {
-    
+    margin-right: 0.6em;
+    margin-left: 0.6em;
     filter: invert(92%) sepia(90%) saturate(3614%) hue-rotate(178deg) brightness(109%) contrast(108%);
 }
-
-
 
 .banner {
     width: 100%;
@@ -37,7 +36,7 @@
     color: white;
     font-family: "custom-font";
     font-size: 2.7em;
-    
+    opacity: 0.75;
     
 }
 
@@ -51,7 +50,7 @@
     src: url("fonts/RacingSansOne-Regular.ttf");
 }
 
-@media only screen and (max-width: 1141px) {
+@media only screen and (max-width: 1250px) {
     .main {
         display: flex;
         flex-direction: column;
@@ -60,7 +59,10 @@
         width: 100vw;
     }
     .left{
-        height: 10em;
+        height: 12em;
+    }
+    .logo{
+        margin-right: 2em;
     }
 }
 
