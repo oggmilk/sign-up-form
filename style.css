@@ -20,15 +20,25 @@
     align-items: center;
 }
 
+.logo {
+    
+    filter: invert(92%) sepia(90%) saturate(3614%) hue-rotate(178deg) brightness(109%) contrast(108%);
+}
+
+
+
 .banner {
     width: 100%;
-    opacity: 0.6;
+    padding: 10px;
     background-color: var(--background);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     color: white;
-    font-size: 60px;
     font-family: "custom-font";
+    font-size: 2.7em;
+    
+    
 }
 
 .right {
@@ -41,7 +51,7 @@
     src: url("fonts/RacingSansOne-Regular.ttf");
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1141px) {
     .main {
         display: flex;
         flex-direction: column;
