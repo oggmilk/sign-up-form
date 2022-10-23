@@ -1,4 +1,10 @@
+:root {
+    --background: #0B0C10;
+}
 
+.main {
+    display: flex;
+}
 
 .panel {
     height: 100vh;
@@ -14,21 +20,28 @@
     align-items: center;
 }
 
-.logo {
-    width: 30vw;
+.banner {
+    width: 100%;
     opacity: 0.6;
-    background-color: black;
+    background-color: var(--background);
     display: flex;
     justify-content: center;
     color: white;
-    font-size: 60px;;
+    font-size: 60px;
+    font-family: "custom-font";
 }
 
 .right {
     width: 70vw; 
+    background-color: var(--background);
 }
 
-@media only screen and (max-width: 1000px) {
+@font-face {
+    font-family: "custom-font";
+    src: url("fonts/RacingSansOne-Regular.ttf");
+}
+
+@media only screen and (max-width: 600px) {
     .main {
         display: flex;
         flex-direction: column;
