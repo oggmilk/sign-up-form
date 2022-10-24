@@ -1,5 +1,7 @@
 :root {
-    --background: #0B0C10;
+    --background: #717b7a;
+    --text: #00020d;
+    --banner: #96acb0;
 }
 
 .main {
@@ -29,11 +31,11 @@
 .banner {
     width: 100%;
     padding: 10px;
-    background-color: var(--background);
+    background-color: var(--banner);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    color: var(--text);
     font-family: "custom-font";
     font-size: 2.7em;
     opacity: 0.75;
@@ -42,7 +44,7 @@
 
 .right {
     width: 70vw; 
-    background-color: var(--background);
+    background-color: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,39 +54,64 @@
     flex: 1;
     font-size: 1.5em;
     font-family:'Times New Roman', Times, serif;
-    color: aliceblue;
+    color: var(--text);
     padding-top: 2em;
     padding-left: 4.5em;
     padding-right: 4.5em;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--background);
     
 }
 
 form {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    color: aliceblue;
+    justify-content: center;
+    flex: 2;
+    color: var(--text);
+  
+    
+    background-color: var(--banner);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    z-index: 1;
+    
 }
 fieldset {
     display: flex;
-    
+    width:85%;
+  
 }
 
 .field-rows {
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    font-size: 20px;
+    padding: 20px;
     
-   
-
 }
+
+
+
+input {
+  width: 175px;
+  height: 25px;
+  margin-top: 3px;
+  border-radius: 5px;
+  border-style: none;
+}
+
+input:focus {
+  border: solid green;
+}
+
 
 .bottom {
     flex: 1;
+    background-color: var(--background);
+    padding: 3em;
 }
 
 
