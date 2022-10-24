@@ -2,6 +2,8 @@
     --background: #717b7a;
     --text: #00020d;
     --banner: #96acb0;
+    --bannerVar: #6d858a;
+    --bannerVar2: #5b6f73
 }
 
 .main {
@@ -56,8 +58,8 @@
     font-family:'Times New Roman', Times, serif;
     color: var(--text);
     padding-top: 2em;
-    padding-left: 4.5em;
-    padding-right: 4.5em;
+    padding-left: 6em;
+    padding-right: 6em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,18 +72,15 @@ form {
     flex-direction: column;
     justify-content: center;
     flex: 2;
-    color: var(--text);
-  
-    
-    background-color: var(--banner);
+    color: var(--text); background-color: var(--banner);
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     z-index: 1;
     
 }
 fieldset {
     display: flex;
-    width:85%;
-  
+    width: 75%;
+    
 }
 
 .field-rows {
@@ -90,21 +89,31 @@ fieldset {
     flex-direction: column;
     font-size: 20px;
     padding: 20px;
+    margin-left: 20px;
     
 }
 
 
 
 input {
-  width: 175px;
+  width: 250px;
   height: 25px;
   margin-top: 3px;
   border-radius: 5px;
   border-style: none;
+  padding-left: 5px;
+}
+
+input:hover {
+  background-color: #f5f5f0;
 }
 
 input:focus {
-  border: solid green;
+  outline: none;
+  border: 2px solid var(--background);
+  margin: 0px;
+  padding: 0px;
+  padding-left: 5px;
 }
 
 
@@ -114,6 +123,33 @@ input:focus {
     padding: 3em;
 }
 
+button {
+  border-radius: 5px;
+  border-width: 0;
+  height: 50px;
+  width: 225px;
+  padding: 10;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  border: 0.005px solid var(--bannerVar2);
+  background-color: var(--bannerVar);
+}
+
+button:hover {
+  background-color: var(--bannerVar2);
+}
+
+button:active {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  border: 0.0005px solid silver;
+  background-color: var(--bannerVar2);
+}
+
+#log-in-text {
+  margin-top: 17px;
+  margin-left: 6px;
+}
 
 
 
