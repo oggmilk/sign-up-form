@@ -15,7 +15,7 @@
 }
 
 .left {
-    background-image: url(Images/acoustic.jpg);
+    background-image: url(Images/telecaster.jpg);
     background-size: cover;
     background-position: 50%;
     width: 30vw; 
@@ -40,7 +40,7 @@
     color: white;
     font-family: "custom-font";
     font-size: 2.7em;
-    opacity: 0.88;
+    opacity: 0.75;
     
 }
 
@@ -115,6 +115,18 @@ input:focus {
   margin: 0px;
   padding: 0px;
   padding-left: 5px;
+}
+
+input.error {
+  border: 2px solid red;
+}
+
+.error-message {
+  position: absolute;
+  font-weight: bold;
+  margin-top: 18em;
+  margin-left: 4em;
+  color: red;
 }
 
 

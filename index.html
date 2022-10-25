@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Sign-Up Form</title>
 </head>
 <body>
@@ -15,40 +16,41 @@
         </div>
         <div class="panel right">
             <p id="upper-text">If you want to find out about the latest and greatest from us here at the Custom Shop, sign up below for our weekly-update newsletter. </br></br> You know you want to!</p>
-            <form>
+            <form id="main-form">
                 <fieldset>
                     <div class="field-rows">
                         <label for="first_name">First Name</label>
-                        <input id="first_name">
+                        <input id="first_name" required>
                     </div>
                     <div class="field-rows">
                         <label for="last_name">Last Name</label>
-                        <input id="last_name">
+                        <input id="last_name" required>
                     </div>
                 </fieldset>
                 <fieldset>
                     <div class="field-rows">
                         <label for="email">Email</label>
-                        <input type="email" id="email">
+                        <input type="email" id="email" required>
                     </div>
                     <div class="field-rows">
                         <label for="phone_number">Phone Number</label>
-                        <input type="phone" id="phone_number" placeholder="(123) 456-7890">
+                        <input type="phone" id="phone_number" placeholder="(123) 456-7890" required>
                     </div>
                 </fieldset>
                 <fieldset>
                     <div class="field-rows">
-                        <label for="password">Password</label>
-                        <input type="password" id="password">
+                        <label for="password" required>Password</label>
+                        <input type="password" id="password"onkeyup="check();">
                     </div>
                     <div class="field-rows">
-                        <label for="confirm_password">Confirm Password</label>
-                        <input type="password" id="confirm_password">
+                        <label for="confirm_password" required>Confirm Password</label>
+                        <input type="password" id="confirm_password" onkeyup="check();">
                     </div>
                 </fieldset>    
+                
             </form>
             <div class="bottom">
-              <button>Create Account</button>
+              <button type="submit" form="main-form">Create Account</button>
               <div id="log-in-text">
                 <p>Already have an account? <a href="#####">Log in</a></p>
               </div>
